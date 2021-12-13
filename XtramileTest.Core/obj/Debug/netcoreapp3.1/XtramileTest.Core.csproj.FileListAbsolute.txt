@@ -1,0 +1,9 @@
+D:\Xtramile\XtramileTest\XtramileTest.Core\bin\Debug\netcoreapp3.1\XtramileTest.Core.deps.json
+D:\Xtramile\XtramileTest\XtramileTest.Core\bin\Debug\netcoreapp3.1\XtramileTest.Core.dll
+D:\Xtramile\XtramileTest\XtramileTest.Core\bin\Debug\netcoreapp3.1\XtramileTest.Core.pdb
+D:\Xtramile\XtramileTest\XtramileTest.Core\obj\Debug\netcoreapp3.1\XtramileTest.Core.csprojAssemblyReference.cache
+D:\Xtramile\XtramileTest\XtramileTest.Core\obj\Debug\netcoreapp3.1\XtramileTest.Core.AssemblyInfoInputs.cache
+D:\Xtramile\XtramileTest\XtramileTest.Core\obj\Debug\netcoreapp3.1\XtramileTest.Core.AssemblyInfo.cs
+D:\Xtramile\XtramileTest\XtramileTest.Core\obj\Debug\netcoreapp3.1\XtramileTest.Core.csproj.CoreCompileInputs.cache
+D:\Xtramile\XtramileTest\XtramileTest.Core\obj\Debug\netcoreapp3.1\XtramileTest.Core.dll
+D:\Xtramile\XtramileTest\XtramileTest.Core\obj\Debug\netcoreapp3.1\XtramileTest.Core.pdb

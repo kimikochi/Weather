@@ -1,0 +1,10 @@
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\bin\Debug\netcoreapp3.1\Xtramile.Core.deps.json
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\bin\Debug\netcoreapp3.1\Xtramile.Core.dll
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\bin\Debug\netcoreapp3.1\Xtramile.Core.pdb
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\obj\Debug\netcoreapp3.1\Xtramile.Core.csproj.AssemblyReference.cache
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\obj\Debug\netcoreapp3.1\Xtramile.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\obj\Debug\netcoreapp3.1\Xtramile.Core.AssemblyInfoInputs.cache
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\obj\Debug\netcoreapp3.1\Xtramile.Core.AssemblyInfo.cs
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\obj\Debug\netcoreapp3.1\Xtramile.Core.csproj.CoreCompileInputs.cache
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\obj\Debug\netcoreapp3.1\Xtramile.Core.dll
+D:\Test\Xtramile\XtramileTest\Xtramile.Core\obj\Debug\netcoreapp3.1\Xtramile.Core.pdb

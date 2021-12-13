@@ -1,0 +1,117 @@
+﻿<div class="card col-md-12">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label col-md-4">Country</label>
+                    <select id="ddlCountry" class="form-control col-lg-7" onchange="GetCity()"></select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">City</label>
+                    <select id="ddlCity" class="form-control col-lg-7" onchange="GetWeather()"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="control-label col-md-4">Name :</label>
+                    <label class="control-label col-md-7" id="lblName"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Location :</label>
+                    <label class="control-label col-md-7" id="lblLocation"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Date :</label>
+                    <label class="control-label col-md-7" id="lblDate"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Wind :</label>
+                    <label class="control-label col-md-7" id="lblWind"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Visibility :</label>
+                    <label class="control-label col-md-7" id="lblVisibility"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Sky Conditions :</label>
+                    <label class="control-label col-md-7" id="lblSky"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Temperature (C) :</label>
+                    <label class="control-label col-md-7" id="lblTempC"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Temperature (F) :</label>
+                    <label class="control-label col-md-7" id="lblTempF"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Dew Point :</label>
+                    <label class="control-label col-md-7" id="lblDew"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Humidity :</label>
+                    <label class="control-label col-md-7" id="lblHumidity"></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-4">Pressure :</label>
+                    <label class="control-label col-md-7" id="lblPressure"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        debugger;
+        $.ajax({
+            url: weather.API + "api/Country",
+            type: "GET",
+            success: function (e) {
+                $.each(e, function (index, data) {
+                    $("#ddlCountry").append("<option value='" + data + "'>" + data + "</option>");
+                });
+
+                GetCity();
+            }
+        });
+    });
+
+    function GetCity() {
+        debugger;
+        $.ajax({
+            url: weather.API + "api/Country/Cities/" + $("#ddlCountry").val(),
+            type: "GET",
+            success: function (e) {
+                $("#ddlCity").empty();
+                $.each(e, function (index, data) {
+                    $("#ddlCity").append("<option value='" + data + "'>" + data + "</option>");
+                });
+            }
+        });
+    }
+
+    function GetWeather() {
+        $.ajax({
+            url: weather.API + "api/Weather/" + $("#ddlCity").val(),
+            type: "GET",
+            success: function (e) {
+                $("#lblName").text(e.name);
+                $("#lblLocation").text("lat: " + e.coord.lat + ", lon: " + e.coord.lon);
+                $("#lblDate").text(e.date);
+                $("#lblWind").text(e.wind.speed);
+                $("#lblVisibility").text(e.visibility);
+                $("#lblSky").text(e.skyCondition);
+                $("#lblTempC").text(e.temperatureC);
+                $("#lblTempF").text(e.temperatureF);
+                $("#lblDew").text(e.dewPoint);
+                $("#lblHumidity").text(e.humidity);
+                $("#lblPressure").text(e.pressure);
+            }
+        });
+    }
+</script>
